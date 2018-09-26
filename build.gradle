@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'eclipse-wtp'
+    id 'net.ltgt.apt-eclipse' version '0.18'
+    id 'io.github.divinespear.jpa-schema-generate' version '0.3.5.1'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    /* Java EE 8 */
+    compile 'javax:javaee-api:8.0'
+    
+    /* Quartz job scheduler */
+    compile 'org.quartz-scheduler:quartz:2.3.0'
+
+    /* JUnit */
+    testImplementation 'junit:junit:4.12'
+}
